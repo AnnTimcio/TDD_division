@@ -12,13 +12,12 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def division(x, y):
+    if y == 0:
+        return "0%"
+    else:
+        return f"{x * 100 // y}%"
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(division(10, 20))
